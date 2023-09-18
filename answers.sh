@@ -35,4 +35,22 @@ WHERE name='Alex'
 
  12.
  DELETE FROM students WHERE name='Layal';
+ 
+ 14.
+ SELECT companies.name, companies.Date, employees.Name
+ FROM companies
+ INNER JOIN employees ON companies.ID=employees.ID;
 
+ 15.
+ SELECT employees.name
+ FROM employees 
+ join companies
+ ON (companies.ID = employees.ID)
+ WHERE companies.Date < 2000
+
+ 16.
+SELECT companies.Name
+ FROM employees 
+join companies
+ON (companies.ID = employees.ID)
+WHERE employees.Role='Graphic Designer'
