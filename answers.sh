@@ -19,3 +19,20 @@ WHERE name='Basma'
 UPDATE students
 SET Points = 100
 WHERE name='Alex'
+
+10.
+ CREATE TABLE graduates
+ AS SELECT
+ *
+ FROM students
+ WHERE name='Layal'
+ 
+ 11.
+ ALTER TABLE graduates
+ ADD Graduation date ;
+
+ INSERT INTO graduates (Graduation) VALUES ('08-09-2018');
+
+ 12.
+ DELETE FROM students WHERE name='Layal';
+
