@@ -33,7 +33,7 @@ WHERE name='Alex'
  AS SELECT
  *
  FROM students
- WHERE name='Layal'
+ WHERE name='Layal'.
  
  11.Add the graduation date previously mentioned to Layal's record in graduates
 
@@ -41,7 +41,8 @@ WHERE name='Alex'
  ADD Graduation date ;
  INSERT INTO graduates (Graduation) VALUES ('08-09-2018');
 
- 12.Remove Layal's record from students
+ 12.
+  Remove Layal's record from students
 
  DELETE FROM students WHERE name='Layal';
  
